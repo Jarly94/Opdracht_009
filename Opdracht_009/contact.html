@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Contact</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <h1>How to contact me...</h1>
+
+    <nav class="naviBox">
+        <ul class="naviBar">
+          <li><a href="index.html">Home</a></li>
+          <li><a class="currentpage" href="contact.html">Contact</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="#">Placeholder</a></li>
+          <li><a href="#">Placeholder</a></li>
+          <li><a href="about.html">Over mijzelf</a></li>
+          <!-- <li><a href="https://www.google.com" target="_blank"><img width="10px" src="Images/Google.png"></a></li> -->
+        </ul>
+      </nav>
+
+    <form name="contact" method="POST" data-netlify="true">
+        <label for="fName">Your Name</label><br>
+        <input type="text" name="name" id="fName" placeholder="John Doe" required><br>
+
+        <label for="email">Your Email</label><br>
+        <input type="email" id="email" name="email" placeholder="J.Doe@gmail.com" required><br>
+
+        <label for="telnr">Your Phone number</label><br>
+        <input type="tel" id="telnr" name="phone" placeholder="0612345678"><br>
+
+        <label for="age"> Enter your age</label><br>
+        <input type="text" id="age" name="age"><br>
+
+        <label for="birthdate">Your birthdate</label><br>
+        <input type="date" id="birthdate" name="birthdate"><br>
+        <br>
+
+        <label>What is your gender?</label><br>
+        <input type="radio" name="gender" value="Male">Male<br>
+        <input type="radio" name="gender" value="Female">Female<br>
+        <input type="radio" name="gender" value="Other">Other<br>
+        <br>
+
+        <label>What is your favorite cuisine?</label><br>
+        <input type="checkbox" name="italian" id="italian">
+        <label for="italian">Italian</label><br>
+        <input type="checkbox" name="french" id="french">
+        <label for="french">French</label><br>
+        <input type="checkbox" name="Japanese" id="japenese">
+        <label for="japenese">Japanese</label><br>
+        <input type="checkbox" name="dutch" id="dutch">
+        <label for="dutch">Dutch</label><br>
+        <br>
+
+        <label for="favColor">Pick your favorite color:</label>
+        <input type="color" name="color" id="favColor"><br>
+        <br>
+
+        <label for="message">Something about yourself: </label><br>
+        <textarea name="message" id="message"></textarea><br>
+        <br>
+
+        <label for="myFile">Upload your recipe here: </label>
+        <input type="file" name="file" id="myFile"><br>
+        <br>
+
+        <label for="mySite">Paste the URL for the recipe here: </label><br>
+        <input type="url" name="site" id="mySite"><br>
+        <br>
+
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+<footer class="footerBox">
+    <div class="testborder">
+        <h3>Contact/Social Media</h3>
+        <ul class="contactlist">
+            <a href="https://www.github.com/Jarly94" target="blank"><img width="50px" src="images/GitHub.png"
+                    alt="My GitHub page"></a>
+            <a href="mailto:jawhny94@icloud.com"><img width="50px" src="images/Mail.png" alt="My mail account"></a>
+            <a href="https://www.instagram.com/j_arly94/" target="blank"><img width="50px" src="Images/Instagram.png"
+                    alt="My Instagram page"></a>
+            <a href="https://www.facebook.com/johnarly.glen/" target="blank"><img width="50px" src="images/FaceBook.png"
+                    alt="My FaceBook page"></a>
+            <p>&copy; 2021 - John-Arly Glen</p>
+            <a href="#">
+                <p><span style="color: green">Su</span><span style="color:white;">ri</span><span
+                        style="color: red;">na</span><span style="color: yellow;">me</span></p>
+            </a>
+        </ul>
+    </div>
+</footer>
+
+</html>

@@ -1,0 +1,197 @@
+body {
+    margin: 10px;
+    background-color: grey;
+}
+
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.blogpost {
+    width: 300px;
+    border: 1px solid black;   
+}
+
+.blogpost:nth-child(1){
+   flex-grow: 2;
+}
+
+.blogpost:nth-child(2) {
+    flex-grow: 4;
+}
+
+.headerBox {
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.articleBox {
+    margin: 10px auto;
+    padding: 20px;
+    background-color: silver;
+    border-radius: 10px;
+}
+
+/* Footer element related */
+.footerBox {
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 500px;
+    padding: 10px;
+    padding-bottom: 0;
+    background-color: silver;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.contactlist{
+    padding: 0;
+}
+
+/* Main element related */
+.generalBox {
+    margin: 0 auto; 
+    padding: 10px 0;
+    background-color: silver;
+    border-radius: 10px;
+}
+
+.generalBox h3 {
+    padding: 0 20px;
+}
+
+.myFav1 {
+    display: inline-block;
+}
+
+.myFav2{
+    display: inline-block;
+}
+
+/* Navigation bar related */
+.naviBox {
+    margin: 0 50px;
+    padding: 15px;
+    text-align: center;
+}
+
+.naviBar{
+    border-radius: 8px;
+    padding: 0px;
+    margin: 0 auto;
+}
+
+
+.naviBar li{
+    display: inline-block;
+    margin: 7px;
+    padding: 0px;
+    /* width: auto; */
+}
+
+.naviBar a {
+    color: white;
+    background-color: tan;
+    padding: 7px;
+    border-radius: 7px;
+    text-decoration: none;
+}
+
+.naviBar a:hover:not(.currentpage){
+    background-color: goldenrod;    /* Highlights the page if you hover the mouse over the button */
+}
+
+.naviBar a.currentpage {
+    background-color: goldenrod;
+}
+
+/* Mobile */
+@media screen and (min-width: 320px) {
+
+    .generalBox {
+        margin: 0 auto;
+        width: auto;
+    }
+
+    .naviBox {
+        margin: 10px;
+        padding: 0;
+    }
+
+    .naviBar{
+        background-color: gray;
+        border-radius: 8px;
+        padding: 0;
+        margin: 0px;
+    }
+
+    .naviBar li {
+        display: block;
+        margin: 7px auto;
+        padding: 7px;
+    }
+
+    .naviBar a {
+        color: white;
+        background-color: tan;
+        padding: 7px 20px;
+        text-decoration: none;
+    }
+    
+    .footerBox {
+        width: auto
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+    /* body{
+        background-color: lightblue;
+        color: indigo;
+        font-size: 13px;
+        line-height: 18px;
+    } */
+
+    .naviBox {
+        margin: 0 auto;
+        padding: 15px;
+        /* text-align: center; */
+        width: 700px;
+    }
+    
+    .naviBar{
+        background-color: silver;
+        border-radius: 8px;
+        padding: 7px;
+        margin: 0 auto;
+        /* width: 705px; */
+    }
+    
+    
+    .naviBar li{
+        display: inline;
+        padding: 7px 10px;
+        margin: 5px;
+    }
+    
+    .naviBar a {
+        color: white;
+        /* background-color: tan; */
+        padding: 7px;
+        text-decoration: none;
+    }
+    
+    .footerBox {
+        margin: 0 auto;
+        margin-top: 20px;
+        width: 500px;
+        padding: 10px;
+        padding-bottom: 0;
+        background-color: silver;
+        border-radius: 10px;
+        text-align: center;
+    }
+} 
